@@ -1,0 +1,271 @@
+/* ===== ESTILOS ESPECÍFICOS PARA COUNTERTOPS ===== */
+
+/* Sección de introducción */
+.container-about .contexto p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--primary);
+    text-align: center;
+}
+
+.container-about .contexto .bold {
+    color: var(--secundary);
+    font-weight: 700;
+}
+
+/* Galerías */
+.countertops h1 {
+    font-size: 2.8rem;
+    color: var(--primary);
+    text-align: center;
+    margin: 40px 0;
+    border-bottom: solid 3px var(--secundary);
+    border-radius: 15px;
+    width: 65%;
+    margin: 40px auto;
+}
+
+.engineered-stone-section {
+    width: 100%;
+  
+    background: linear-gradient(135deg, var(--tercero) 0%, #ffffff 100%);
+    padding: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.engineered-hero {
+    display: flex;
+    min-height: 500px;
+    position: relative;
+}
+
+.engineered-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.engineered-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.engineered-hero:hover .engineered-image img {
+    transform: scale(1.05);
+}
+
+.engineered-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--primary);
+    position: relative;
+}
+
+.engineered-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--secundary-lightest) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.engineered-content > * {
+    position: relative;
+    z-index: 1;
+}
+
+.engineered-title {
+    font-size: 2.5rem;
+    color: var(--tercero);
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.engineered-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--secundary);
+}
+
+.engineered-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--tercero);
+    margin-bottom: 30px;
+}
+
+.engineered-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: var(--tercero);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--secundary);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--secundary-lightest) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card > * {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--secundary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: var(--tercero);
+    font-size: 1.3rem;
+}
+
+.feature-title {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-description{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--primary) !important;
+}
+
+.calgary-advantage {
+    background: var(--primary);
+    color: var(--tercero);
+    padding: 40px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calgary-advantage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(226,137,83,0.1)"/></svg>');
+    background-size: cover;
+}
+
+.calgary-advantage > * {
+    position: relative;
+    z-index: 1;
+}
+
+.advantage-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--secundary-light);
+}
+
+.advantage-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .engineered-hero {
+        flex-direction: column;
+    }
+    
+    .engineered-image {
+        min-height: 300px;
+    }
+    
+    .engineered-content {
+        padding: 40px 30px;
+    }
+    
+    .engineered-features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .engineered-title {
+        font-size: 2rem;
+    }
+    
+    .engineered-content {
+        padding: 30px 20px;
+    }
+    
+    .calgary-advantage {
+        padding: 30px 20px;
+    }
+    
+    .advantage-title {
+        font-size: 1.5rem;
+    }
+
+    .fila1, .fila2, .fila3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-item {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .countertops h1 {
+        font-size: 2.2rem;
+        width: 90%;
+    }
+}
