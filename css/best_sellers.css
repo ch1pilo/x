@@ -325,12 +325,12 @@
 }
 
 /* Hacer las tarjetas clickeables */
-.conten_project, .feature-card {
+.stone-card {
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.conten_project:hover, .feature-card:hover {
+.stone-card:hover {
     transform: translateY(-5px);
 }
 
