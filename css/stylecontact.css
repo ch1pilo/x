@@ -537,7 +537,7 @@ header{
 }
 
 /* Para teléfonos muy pequeños */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .contact-hero {
         padding: 40px 10px;
     }
