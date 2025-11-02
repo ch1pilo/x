@@ -74,17 +74,6 @@ header{
     color: var(--tercero);
 }
 
-.contact-text h3 {
-    color: var(--secundary);
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-}
-
-.contact-text p {
-    color: var(--tercero);
-    line-height: 1.5;
-}
-
 .social-contact h3 {
     color: var(--secundary);
     margin-bottom: 15px;
@@ -525,8 +514,6 @@ header{
     }
     
     /* Asegura que los textos no se salgan */
-    .contact-text h3,
-    .contact-text p,
     .social-contact h3 {
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -534,7 +521,7 @@ header{
     
     .location-container {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 30px;  
     }
     
     .map-container {

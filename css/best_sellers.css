@@ -169,12 +169,202 @@
 .row-2-asymmetric .gallery-item.size-3 { flex: 3; }
 .row-single .gallery-item { width: 100%; max-width: 800px; margin: 0 auto; }
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .gallery-row {
-        flex-wrap: wrap;
+.contenedor_suplayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.proveedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.suplayer{
+    border-bottom: 3px solid var(--secundary);
+    width: 25%;
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 15px;
+}
+
+.contenedor_suplayer img{
+    width: 200px;
+    height: 100px;
+    object-fit: none;
+}
+
+/* ===== ESTILOS PARA EL MODAL DE PIEDRAS ===== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.stone-modal {
+    background-color: var(--tercero);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.modal-overlay.active .stone-modal {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--primary);
+    color: var(--tercero);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.modal-close:hover {
+    background: var(--secundary);
+    transform: rotate(90deg);
+}
+
+.modal-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.modal-content {
+    padding: 30px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.modal-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--secundary);
+}
+
+.modal-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.modal-project-info {
+    background: var(--secundary-lightest);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-left: 4px solid var(--secundary);
+}
+
+.modal-project-info h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.modal-project-info p {
+    color: var(--primary);
+    font-style: italic;
+}
+
+/* Hacer las tarjetas clickeables */
+.conten_project, .feature-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.conten_project:hover, .feature-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .stone-modal {
+        width: 95%;
     }
     
+    .modal-content {
+        padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 1.7rem;
+    }
+    
+    .modal-image {
+        height: 200px;
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .gallery-row, .contenedor_suplayer {
+        flex-wrap: wrap;
+    }
+
+    .suplayer{
+        width: 80%;
+    }
+
+    .proveedores .card{
+    }
+
     .gallery-item {
         flex: 1 1 calc(50% - 20px) !important;
         min-width: 300px;
