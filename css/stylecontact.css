@@ -489,6 +489,10 @@ header{
         gap: 30px;
         grid-template-columns: 1fr;
     }
+
+    .contact-info{
+        width: 90%;
+    }
     
     .contact-info h1 {
         font-size: 2rem;
@@ -549,6 +553,7 @@ header{
     .contact-form-container {
         padding: 20px 15px;
         margin: 0 5px;
+        width: 350px;
     }
     
     .contact-item {
