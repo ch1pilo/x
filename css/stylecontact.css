@@ -386,6 +386,13 @@ header{
     background: var(--secundary-lightest);
 }
 
+.contact-text p{
+    color: var(--tercero);
+}
+
+.contact-text h3{
+    color: var(--secundary);
+}
 .faq-question h3 {
     color: var(--primary);
     font-size: 1.1rem;
