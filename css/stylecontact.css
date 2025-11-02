@@ -553,7 +553,7 @@ header{
     
     .contact-item {
         gap: 10px;
-        text-align: center;
+        text-align: start;
     }
     
     .social-links {
