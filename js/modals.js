@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         modalDescription.textContent = description;
         modalImage.src = imageSrc;
         modalImage.alt = title;
-        modalProjectStatus.textContent = "Aplicada en proyecto";
+        modalProjectStatus.textContent = "Implemented in the Project";
         
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
