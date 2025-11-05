@@ -1,0 +1,123 @@
+.remodelaciones{
+    padding: 20px;
+    background: linear-gradient(150deg, var(--primari-gradiente)30%, var(--primary-dark)70%);
+    color: var(--tercero);
+    text-align: center;
+}
+h1{
+    margin-bottom: 15px;
+    font-size: 2.8rem;
+}
+.bathrooms h2{
+    margin-top: 50px;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    color: var(--secundary);
+}
+
+.contexto{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contexto p{
+    width: 90%;
+    line-height: 1.6;
+    font-size: 18px;
+}
+/* Estilos para el carrusel infinito continuo */
+.carrusel_renovation {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    height: 200px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.carrusel_renovation-track {
+    display: flex;
+    height: 100%;
+    animation: scroll-infinito 10s linear infinite;
+    gap: 20px; /* Sin espacio entre imágenes */
+}
+
+.carrusel_renovation-item {
+    flex: 0 0 auto;
+    height: 100%;
+    position: relative;
+    min-width: calc(100% / 3); /* 3 imágenes visibles a la vez */
+}
+
+.carrusel_renovation-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+    border: solid 2px var(--secundary);
+    border-radius: 15px;
+    transition: filter 0.3s ease;
+}
+
+/* Efecto hover sutil */
+.carrusel_renovation:hover .carrusel_renovation-item img {
+    filter: brightness(0.7);
+}
+
+.carrusel_renovation:hover .carrusel_renovation-track {
+    animation-play-state: paused;
+}
+
+/* Animación infinita */
+@keyframes scroll-infinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 2)); /* Mueve la mitad del track (las imágenes duplicadas) */
+    }
+}
+
+/* Pausa la animación cuando se reduce el movimiento */
+@media (prefers-reduced-motion: reduce) {
+    .carrusel_renovation-track {
+        animation: none;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carrusel_renovation {
+        height: 210px;
+    }
+    .contexto{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carrusel_renovation-item {
+        min-width: calc(100% / 2); /* 2 imágenes visibles en tablet */
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    .carrusel_renovation-item {
+        min-width: 100%; /* 1 imagen visible en móvil */
+    }
+    
+    @keyframes scroll-infinito {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-100% / 2));
+        }
+    }
+}

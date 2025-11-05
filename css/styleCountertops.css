@@ -201,6 +201,25 @@
     .engineered-hero {
         flex-direction: column;
     }
+
+    .feature-card{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .invertido .feature-card{ 
+        flex-direction: row-reverse;
+         align-items: center;
+        justify-content: flex-start;
+    }
+
+    .feature-icon{
+        margin-left: 0;
+        margin-right: auto;
+    }
+
     
     .engineered-image {
         min-height: 300px;

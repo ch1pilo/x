@@ -822,6 +822,19 @@ footer {
     color: var(--secundary-light);
     transform: translateY(-5px);
 }
+.telefono{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.horario{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
 .idioma{
     margin-top: 20px;
     display: flex;
@@ -830,7 +843,7 @@ footer {
     cursor: pointer;
 }
 
-.idioma i {
+.idioma i, .horario i, .telefono i {
     font-size: 28px;
 }
 
@@ -851,6 +864,11 @@ footer {
 @media (max-width: 1024px) {
     .container {
         width: 100%;
+    }
+
+    
+    .horario, .telefono{
+        justify-content: center;
     }
     
     .servicios h1, .materiales h1{
@@ -1025,6 +1043,8 @@ footer {
         padding: 20px;
     }
 
+    
+
     .conten_project::before{
         clip-path: polygon(0 0, 40% 0, 100% 30%, 100% 100%, 0 100%);
     }
@@ -1038,6 +1058,11 @@ footer {
 @media (max-width: 480px) {
     .stat-number {
         font-size: 2.2rem;
+    }
+
+    .cierre img{
+        width: 95%;
+        height: auto;
     }
 
     .values-container {
