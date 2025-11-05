@@ -42,7 +42,7 @@ h1{
 .carrusel_renovation-track {
     display: flex;
     height: 100%;
-    animation: scroll-infinito 10s linear infinite;
+    animation: scroll-infinito 60s linear infinite;
     gap: 20px; /* Sin espacio entre imágenes */
 }
 
@@ -79,7 +79,7 @@ h1{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-100% / 2)); /* Mueve la mitad del track (las imágenes duplicadas) */
+        transform: translateX(calc(-100% / 0.09)); /* Mueve la mitad del track (las imágenes duplicadas) */
     }
 }
 
@@ -88,12 +88,28 @@ h1{
     .carrusel_renovation-track {
         animation: none;
     }
+    
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .carrusel_renovation {
         height: 210px;
+    }
+
+    .remodelaciones{
+        background: linear-gradient(200deg, var(--primary)30%, var(--primary-dark)70%);
+    }
+
+    .bathrooms{
+        border: solid 3px var(--secundary);
+        border-radius: 15px;
+    }
+
+    .remodelaciones{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     .contexto{
         flex-direction: column;
@@ -117,7 +133,7 @@ h1{
             transform: translateX(0);
         }
         100% {
-            transform: translateX(calc(-100% / 2));
+            transform: translateX(calc(-100% / 0.09));
         }
     }
 }
