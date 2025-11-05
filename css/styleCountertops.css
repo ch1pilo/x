@@ -40,6 +40,11 @@
     position: relative;
 }
 
+.invertido{
+    flex-direction: row-reverse;
+    text-align: end;
+}
+
 .engineered-image {
     flex: 1;
     position: relative;
@@ -100,6 +105,11 @@
     width: 80px;
     height: 4px;
     background: var(--secundary);
+}
+
+.invertido .engineered-title::after {
+    left: auto;
+    right: 0; 
 }
 
 .engineered-description {
@@ -164,6 +174,12 @@
     margin-bottom: 15px;
     color: var(--tercero);
     font-size: 1.3rem;
+}
+
+
+.invertido .feature-icon {
+    margin-right: 0;
+    margin-left: auto;
 }
 
 .feature-title {
