@@ -164,7 +164,7 @@
 }
 
 .feature-icon {
-    width: 50px;
+    width: 50px !important;
     height: 50px;
     background: var(--secundary);
     border-radius: 50%;
@@ -237,6 +237,10 @@
 @media (max-width: 768px) {
     .engineered-title {
         font-size: 2rem;
+    }
+
+    .feature-title {
+        width: 230px;
     }
     
     .engineered-content {
