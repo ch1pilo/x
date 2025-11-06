@@ -54,7 +54,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Our Location</h3>
-                            <p>157 Walgrove Terrace SE <br>Calgary, AB T2J 3Z5</p>
+                            <p>Calgary, Alberta</p>
                         </div>
                     </div>
                     
@@ -65,9 +65,9 @@
                         <div class="contact-text">
                             <h3>Working Hours</h3>
                             <p>
-                            Monday – Friday: 8:00 AM – 4:00 PM<br>
+                            Monday – Friday: 08:00 AM – 6:00 PM<br>
                             Saturday: 09:00 AM – 12:00 PM<br>
-                            Sunday: Closed<br><br>
+                            Sunday: Closed
                             </p>
                         </div>
                     </div>
@@ -79,9 +79,9 @@
                         </div>
                         <div class="contact-text">
                             <h3>Call Us</h3>
-                            <p>+1 825-747 7417
+                            <p>+1 403-478 7360 SALES - for quotes and new projects
                                 <br>
-                                +1 403-478 7360
+                                +1 825-747 7417 AFTERCARE we're here for you - even after your project is complete.
                             </p>
 
                         </div>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="contact-text">
                             <h3>Email Us</h3>
-                            <p>info@primebuildworks.ca<br>danielromero@primebuildworks.ca</p>
+                            <p>danielromero@primebuildworks.ca<br>info@primebuildworks.ca</p>
                         </div>
                     </div>
                    
@@ -124,36 +124,36 @@
                     <p>Fill out the form below and we’ll get back to you within 24 hours. Let’s get this reno going!</p>
                 </div>
                 
-                <form class="contact-form">
+                <form class="contact-form" id="contact-form">
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="text" id="firstName" required>
+                            <input type="text" id="firstName" name="firstName" required>
                             <label for="firstName">First Name</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" id="lastName" required>
+                            <input type="text" id="lastName" name="lastName" required>
                             <label for="lastName">Last Name</label>
                         </div>
                     </div>
                     
                     <div class="form-group">
                         <div class="input-group">
-                            <input type="email" id="email" required>
+                            <input type="email" id="email"  name="email" required>
                             <label for="email">Email Address</label>
                         </div>
                         <div class="input-group">
-                            <input type="tel" id="phone" required>
+                            <input type="tel" id="phone" name="phone" required>
                             <label for="phone">Phone Number</label>
                         </div>
                     </div>
                     
                     <div class="input-group full-width">
-                        <input type="text" id="subject" required>
+                        <input type="text" id="subject" name="subject" required>
                         <label for="subject">Project Subject</label>
                     </div>
                     
                     <div class="input-group full-width">
-                        <select id="service" required>
+                        <select id="service" name="service" required>
                             <option value="" disabled selected></option>
                             <option value="kitchen">Kitchen Countertops</option>
                             <option value="bathroom">Bathroom Vanities</option>
@@ -165,7 +165,7 @@
                     </div>
                     
                     <div class="input-group full-width">
-                        <textarea id="message" rows="5" required></textarea>
+                        <textarea id="message" rows="5" name="message" required></textarea>
                         <label for="message">Project Details</label>
                     </div>
                     
@@ -216,6 +216,7 @@
     </footer>
 
     <div id="particles-js"></div>
+    <script src="../js/formulario.js"></script>
     <script src="../js/particles.js"></script>
     <script src="../js/app.js"></script>
     <script src="../js/scripts.js"></script>    
