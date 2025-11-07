@@ -19,35 +19,19 @@
     <meta property="og:url" content="https://tusitio.com/index.html">
     <meta property="og:type" content="website">
 
-   <!-- Ícono del sitio -->
-<link rel="icon" type="image/png" href="img/icon.png">
-
-<!-- Font Awesome: carga diferida para evitar bloqueo -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-
-<!-- Hoja de estilos principal: preload + fallback -->
-<link rel="preload" href="css/styleNuevo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/styleNuevo.css"></noscript>
-
-<!-- Hoja de estilos secundaria -->
-<link rel="preload" href="css/stylejs.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/stylejs.css"></noscript>
-
-<!-- Preconexión a Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Fuente Montserrat: preload + font-display swap -->
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"></noscript>
-
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styleNuevo.css">
+    <link rel="stylesheet" href="css/stylejs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Home - Prime Build Works</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="img/icon.png" alt="logo">
+            <img src="img/icon.png" alt="logo" loading="lazy">
             <p class="bold">Prime Build Works</p>
         </div>
         <div class="hmabu" id="mobile-menu">
@@ -56,7 +40,7 @@
             <span class="bar"></span>
         </div>
         <div class="nav" id="nav-menu">
-            <img src="img/icon.png" alt="" class="logo-nav">
+            <img src="img/icon.png" alt="" class="logo-nav" loading="lazy">
             <a href="index.html" class="active">home</a>
             <a href="paginas/countertops.html">Countertops</a>
             <a href="paginas/renovation.html">Renovation</a>
@@ -72,28 +56,28 @@
     <section class="carrusel">
         <div class="carrusel-container">
             <div class="carrusel-item">
-                <img src="img/2.png" alt="" >
+                <img src="img/2.png" alt="" loading="lazy">
                 <div class="carrusel-text">
                     <h2>Transform Your Space</h2>
                     <p>Discover how the perfect countertop can completely revolutionize your kitchen or bathroom experience</p>
                 </div>
             </div>
             <div class="carrusel-item">
-                <img src="img/3.png" alt="countertops">
+                <img src="img/3.png" alt="countertops" loading="lazy">
                 <div class="carrusel-text">
                     <h2>Endless Possibilities</h2>
                     <p>From quartz to granite, explore materials that blend beauty with unbeatable durability</p>
                 </div>
             </div>
             <div class="carrusel-item">
-                <img src="img/20251011_0009_image.png" alt="contact">
+                <img src="img/20251011_0009_image.png" alt="contact" loading="lazy">
                 <div class="carrusel-text">
                     <h2>Your Vision, Our Craft</h2>
                     <p>Ready to bring your dream space to life? Let's create something extraordinary together</p>
                 </div>
             </div>
             <div class="carrusel-item">
-                <img src="img/5.png" alt="best sellers">
+                <img src="img/5.png" alt="best sellers" loading="lazy">
                 <div class="carrusel-text">
                     <h2>Customer Favorites</h2>
                     <p>See why these stunning designs have become the top choices for homeowners everywhere</p>
@@ -117,7 +101,7 @@
 
     <section class="container">
         <div class="container-about reveal-from-top" >
-            <img src="img/icon.png" alt="craftsmanship" class="reveal-from-left">
+            <img src="img/icon.png" alt="craftsmanship" class="reveal-from-left" loading="lazy">
             <div class="contexto">    
                 <p class="reveal-from-right"><samp>ABOUT US</samp> 
                     At Prime Build Works, we don’t just renovate homes we help you fall in love with them all over again. Based in Calgary, our team brings craftsmanship, creativity, and genuine care o every project, whether it’s a single countertop or a complete home transformation.</p>
@@ -174,7 +158,7 @@
         <h1>Services</h1>
         <div class="card-container">
             <div class="card">
-                <img src="img/fotos/kitchen/KBC.webp" alt="service1">
+                <img src="img/fotos/kitchen/KBC.webp" alt="service1" loading="lazy">
                 <h2>Kitchens & Bathrooms Countertops </h2>
                 <div class="descripcion">
                     <p>
@@ -187,7 +171,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="img/remodelaciones.png" alt="service1">
+                <img src="img/remodelaciones.png" alt="service1" loading="lazy">
                 <h2>Full Home Renovations</h2>
                 <div class="descripcion">
                     <p>
@@ -196,7 +180,7 @@
                 </div>
             </div>  
             <div class="card">
-                <img src="img/diseño.webp" alt="service1">
+                <img src="img/diseño.webp" alt="service1" loading="lazy">
                 <h2>Kitchen & Bathroom Designs</h2>
                 <div class="descripcion">
                     <p>
@@ -211,7 +195,7 @@
     <section class="materiales"> 
         <h1>Get to know our materials</h1>
         <div class="conten_project inverso reveal-from-right">
-            <img src="img/fotos/PIEDRAS PRIME/Natural Stone/Bianco antico level 2/PXL_20251023_170100617.webp" alt="proyecto">
+            <img src="img/fotos/PIEDRAS PRIME/Natural Stone/Bianco antico level 2/PXL_20251023_170100617.webp" alt="proyecto" loading="lazy">
             <div class="contexto ">
                 <h2>Natural Stones</h2>
                 <p>
@@ -221,7 +205,7 @@
         </div>
 
          <div class="conten_project reveal-from-left">
-            <img src="img/fotos/PIEDRAS PREMIUM/Engineered Stone/calacatta fantasy level 1/PXL_20251023_173516326.webp" alt="proyecto">
+            <img src="img/fotos/PIEDRAS PREMIUM/Engineered Stone/calacatta fantasy level 1/PXL_20251023_173516326.webp" alt="proyecto" loading="lazy">
             <div class="contexto h2_proyecto">
                 <h2>Engineered Stone  (Quartz & Sintered surfaces)</h2>
                 <p>
@@ -233,7 +217,7 @@
 
     <section class="cierre">
         <div class="contendor-cierre reveal-from-right">
-            <img src="img/encimera_espectacular.webp" alt="proyecto">
+            <img src="img/encimera_espectacular.webp" alt="proyecto" loading="lazy">
             <div class="contene">
                 <div class="contexto ">
                     <h2>Why Choose Us?</h2>
