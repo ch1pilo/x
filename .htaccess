@@ -1,0 +1,20 @@
+# Cache de imágenes (1 año)
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|ico|svg)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, immutable"
+</FilesMatch>
+
+# Cache de CSS y JS (1 mes)
+<FilesMatch "\.(css|js)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+    Header set Cache-Control "public, immutable"
+</FilesMatch>
+
+# Cache de fuentes (1 año)
+<FilesMatch "\.(woff|woff2|ttf|eot)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+    Header set Cache-Control "public, immutable"
+</FilesMatch>
