@@ -1,5 +1,0 @@
-/* Solo estilos críticos para above-the-fold */
-body { font-family: sans-serif; margin: 0; }
-header { position: fixed; top: 0; width: 100%; z-index: 1000; }
-.logo { display: flex; align-items: center; }
-.carrusel { position: relative; overflow: hidden; }
