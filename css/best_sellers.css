@@ -373,9 +373,6 @@
         width: 80%;
     }
 
-    .proveedores .card{
-    }
-
     .gallery-item {
         flex: 1 1 calc(50% - 20px) !important;
         min-width: 300px;
