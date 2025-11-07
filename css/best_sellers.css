@@ -57,6 +57,17 @@
     margin-bottom: 10px;
 }
 
+.category-title p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titulo_coleccion{
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--secundary);
+    font-size: 3rem;
+}
 .category-title::after {
     content: '';
     position: absolute;
