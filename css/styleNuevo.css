@@ -328,8 +328,8 @@ a {
 
 /* Imágenes */
 .container-about img{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     margin: 0 40px;
     object-fit: cover;
@@ -351,7 +351,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
-    width: 45%;
+    width: 65%;
     padding: 20px;
     position: relative;
     z-index: 2;
